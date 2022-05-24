@@ -2,9 +2,21 @@ pipeline {
     agent any
 
     stages {
-        stage('tarea1') {
+        stage('stage1') {
             steps {
-                echo "ejercicio tarea 1"
+                echo "Tarea 1"
+                echo 'Por Josue Ocampo'
+            }
+        }
+        stage('stage2') {
+            steps {
+                echo "executing Tarea 1"
+                sh "python hello-world.py"
+            }
+        }
+        stage('stage3') {
+            steps {
+                echo "Success"
             }
         }
         
