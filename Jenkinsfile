@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('stage1') {
+        stage("stage1") {
             steps {
                 echo "Tarea 1"
-                echo 'Por Josue Ocampo'
+                echo "Por Josue Ocampo"
             }
         }
         stage('stage2') {
